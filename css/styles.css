@@ -1,9 +1,34 @@
 body {
   font-family: "Ubuntu", sans-serif;
+  text-align: center;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-size: 3.5rem;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
+
 #title,
 #cta {
   background-color: #ff4c68;
@@ -15,6 +40,11 @@ body {
   line-height: 1.5;
   color: white;
 }
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Navigation Bar */
 #title .container {
   padding-left: 0;
@@ -37,11 +67,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Download Button */
-.download-btn {
-  margin: 5% 3% 5% 0;
-}
-
 /* Title Img */
 .title-img {
   width: 60%;
@@ -50,17 +75,19 @@ body {
   position: relative;
 }
 
+/* Download Button */
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
 /* Feature Section*/
 #features {
-  padding-top: 3%;
-  padding-bottom: 5%;
   background-color: white;
   position: relative;
   /* z-index: 1; */
 }
-
-#features div {
-  text-align: center;
+.features-title {
+  font-size: 1.5rem;
 }
 
 #features i {
@@ -74,24 +101,18 @@ i:focus {
   color: rgba(239, 129, 114, 0.7);
 }
 
-#features p {
-  color: grey;
-}
 #features div .col-sm-12 {
   margin: 10% 0;
 }
 
 /* Testimonials Section*/
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
-#testimonials h2 {
-  font-family: "Montserrat-Bold";
+testimonials-text {
   font-size: 3rem;
   line-height: 1.5em;
-  font-weight: 900;
 }
 
 .testimonials-img {
@@ -99,13 +120,8 @@ i:focus {
   border-radius: 100%;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 #press {
   background-color: #ef8172;
-  text-align: center;
 }
 .press-img {
   width: 15%;
@@ -115,11 +131,11 @@ i:focus {
 /* Pricing Section */
 
 #pricing {
-  text-align: center;
   margin-top: 30px;
 }
-#pricing p {
-  color: grey;
+#pricing price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 #pricing .card-header {
   background-color: #ef8172;
@@ -141,20 +157,19 @@ button:focus {
   box-shadow: 0 5px;
 }
 
-#cta {
-  text-align: center;
-  padding: 5% 15%;
-  margin-top: 2%;
-}
 #footer {
-  text-align: center;
-  background-color: #000000;
-  color: #fff;
+  background-color: white;
+  color: black;
+}
+#footer i {
+  margin: 0 30px;
+  margin-bottom: 30px;
 }
 #footer p {
   margin-bottom: 0;
 }
 
+/* Media Section */
 @media (max-width: 1028px) {
   #title {
     text-align: center;
@@ -181,5 +196,8 @@ button:focus {
   }
   #footer {
     font-size: 8px;
+  }
+  #footer i {
+    font-size: 30px;
   }
 }
